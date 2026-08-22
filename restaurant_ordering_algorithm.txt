@@ -1,0 +1,61 @@
+PRACTICAL 61 – RESTAURANT ORDERING SYSTEM
+ALGORITHM
+
+1. Start.
+
+2. Display the title "RESTAURANT ORDERING SYSTEM".
+
+3. Accept the customer name.
+
+4. Initialize:
+   - subtotal = 0
+   - total_items = 0
+   - quantity of every menu item = 0
+   - amount of every ordered item = 0
+
+5. Display the restaurant menu repeatedly:
+      1. Veg Burger       Rs.120
+      2. Veg Pizza        Rs.250
+      3. Sandwich         Rs.150
+      4. French Fries     Rs.100
+      5. Cold Drink       Rs.60
+      6. Generate Bill
+      7. Exit
+
+6. Accept the user's choice.
+
+7. If the choice is 1, 2, 3, 4, or 5:
+   a. Accept the quantity.
+   b. Check that the quantity is greater than zero.
+   c. Calculate item total = price × quantity.
+   d. Add the item total to subtotal.
+   e. Add the quantity to total_items.
+   f. Store the quantity and item total for generating the bill later.
+   g. Display that the item was added.
+   h. Return to the menu.
+
+8. If the choice is 6:
+   a. Check whether at least one item has been ordered.
+   b. If no item is ordered, display "No items ordered" and return to the menu.
+   c. Otherwise calculate GST = subtotal × 5 / 100.
+   d. Calculate grand_total = subtotal + GST.
+   e. Display the restaurant bill containing:
+      - Customer name
+      - Ordered items
+      - Quantity
+      - Individual amount
+      - Sub Total
+      - GST (5%)
+      - Grand Total
+      - Total number of items
+   f. Display "Thank You! Visit Again."
+   g. Return to the menu.
+
+9. If the choice is 7:
+   a. Display an exit message.
+   b. Stop the program.
+
+10. If the choice is anything other than 1 to 7:
+    Display "Invalid choice" and return to the menu.
+
+11. End.
